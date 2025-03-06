@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Color de Fondo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: right;
+            background-color: #f4f4f4;
+            margin: 5px;
+            transition: background 19.5s ease; /* Agrega una transición suave */
+        }
+        h1 {
+            color: #233;
+        }
+        p {
+            font-size: 38px;
+            color: #666;
+        }
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            background: orange;
+            color: white;
+            text-decoration: line-through;
+            border-radius: 20px;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>¡Bienvenido!</h1>
+    <p>Haz clic en el botón para cambiar el color de fondo.</p>
+    <button class="boton" onclick="cambiarColor()">Cambiar Color</button>
+
+    <script>
+        function cambiarColor() {
+            let body = document.body;
+            if (body.style.backgroundColor === "red") {
+                body.style.backgroundColor = "#f4f4f4"; // Vuelve al color original
+            } else {
+                body.style.backgroundColor = "red"; // Cambia a rojo
+            }
+        }
+    </script>
+
+</body>
+</html>
